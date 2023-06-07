@@ -1,6 +1,6 @@
-import React, {Component } from 'react'
-export default class Navigarion extends Component{
-    render(){
+import React from 'react'
+export default function Navigarion (){
+    
         return(
             <div>
                 <nav> 
@@ -13,6 +13,6 @@ export default class Navigarion extends Component{
                 </nav>
             </div>
         )
-    }
+    
 
 }

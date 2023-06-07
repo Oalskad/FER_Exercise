@@ -1,7 +1,6 @@
-import React, { Component } from "react";
-import { Players } from '../shared/ListOfPlayers'
-export default function Player() {
-
+import React from 'react'
+export default function PlayersPresentation({Players}){
+    console.log(Players);
     return (
 
         <div className="container">
@@ -17,5 +16,4 @@ export default function Player() {
             ))}
         </div>
     )
-
 }
