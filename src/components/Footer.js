@@ -1,11 +1,10 @@
-import React,{Component} from "react";
-export default class footer extends Component{
-render(){
-    return(
-        <footer>copyrigth &#169; 2022 </footer>
-
-    )
-
-    
-}
+import React, {Component} from 'react'
+export default class player extends Component{
+    render(){
+        return(
+            <footer>
+                <p>copyright &copy; 2022</p>
+            </footer>
+        )
+    }
 }

@@ -1,18 +1,17 @@
-import React from 'react'
-export default function Navigarion (){
-    
+import React, { Component } from 'react'
+export default class Navigation extends Component{
+    render(){
         return(
-            <div>
-                <nav> 
-                    <ul>
-                        <li><a className='active' href='#home'>Home</a></li>
-                        <li><a href='#news'>News</a></li>
-                        <li><a href='#about'>About</a></li>
-                        <li><a href='#contact'>Contact</a></li>
+            <div className='nav'>
+                <nav>
+                    <ul className='nav-list'>
+                        <li className='nav-list--element'><a className='active' href ="#home">Home</a></li>
+                        <li className='nav-list--element'><a href ="#news">News</a></li>
+                        <li className='nav-list--element'><a href ="#about">About</a></li>
+                        <li className='nav-list--element'><a href ="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         )
-    
-
+    }
 }

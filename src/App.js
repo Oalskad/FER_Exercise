@@ -1,15 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-import Navigarion from './components/Navigation';
-
+import Navigation from './components/Navigation';
+import Player from './components/Player';
 import Footer from './components/Footer';
-import Main from './components/Main';
 function App() {
   return (
-    <div className="App">
-      <Navigarion/>
-      <Main/>
-      <Footer/>
+    <div className='App'>
+      <Navigation/>
+      <Player/>
+      <Footer/>       
     </div>
   );
 }
