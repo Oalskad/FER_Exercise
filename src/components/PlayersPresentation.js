@@ -1,42 +1,34 @@
-import React from "react";
-
-import { Players } from "../shared/ListOfPlayers";
-
-import { useState } from "react";
-export default function PlayersPresentation({ Players }) {
-  //console.log(players);
+import { Players } from '../shared/ListOfPlayers';
+import { useState } from 'react';
+export default function PlayersInfo() {
   const [player, setPlayer] = useState([]);
   return (
-    <div className="container">
+    <div className='container'>
       {Players.map((player) => (
-        <div className="column">
-          <div className="card">
-            <img src={player.img} />
+        <div className='column' key={player.id}>
+          <div className='card'>
+            <img src={player.img} alt='' />
             <h3>{player.name}</h3>
-            <p className="title">{player.club}</p>
+            <p className='title'></p>
             <p>
               <button
-                onClick={() => {
-                  setPlayer(player);
-                }}
-              >
-                {" "}
-                <a href="#popup1" id="openPopup">
+                onClick={() => {setPlayer(player);}}>
+                <a href='#popup1' id='openPopUp'>
                   Detail
-                </a>{" "}
+                </a>
               </button>
             </p>
           </div>
         </div>
       ))}
-      <div id="popup1" className="overlay">
-        <div className="popup">
-          <img src={player.img} alt="" />
+      <div id='popup1' className='overlay'>
+        <div className='popup'>
+          <img src={player.img} />
           <h2>{player.name}</h2>
-          <a href="#" className="close">
+          <a className='close' href='#'>
             &times;
           </a>
-          <div className="content">{player.info}</div>
+          <div className='content'>{player.info}</div>
         </div>
       </div>
     </div>
